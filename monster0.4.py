@@ -1,18 +1,24 @@
 import random
 
-# version 0.2
+# version 0.4
+
+# format #
+
+# This monster is a monsterName1 monsterName2
+# It has monsterEyes and monsterMouth
+# monsterDescPref (it has/it's got) monsterDesc and monsterWeapon
 
 
-print ('this monster is a', end=' ')
+print ('This monster is a', end=' ')
 
 # generation starts
 
-monsterDesc1 = [
+monsterName1 = [
 'replilian', 
-'kinda cute',
+'kinda smelly',
 'big n\' hairy',
 'built Ford tough',
-'very ugly',
+'very intimidating',
 'rather pleasant',
 'large and dangerous',
 'Stephen King\'s',
@@ -28,25 +34,26 @@ monsterDesc1 = [
 'skyscraper-sized',
 'terrifyingly powerful',
 'enormous']
-print(random.choice(monsterDesc1), end=' ')
+print(random.choice(monsterName1), end=' ')
 
-monsterDesc2 = [
+monsterName2 = [
 'beast',
 'kaiju',
 'dragon',
 'generic forest cryptid',
+'generic praire cryptid',
+'generic sea cryptid',  
 'gorilla-esque beast',
-'snake',
+'puma-esque beast',
+'snake-like beast',  
+'vole-like beast',  
+'bear-like beast',  
 'bigfoot',
 'jackalope',
 'squid type thing',
 'yeti',
 'sea goat',
-'water bull',
-'kelpie',
-'ghost whale',
 'imp',
-'vole',
 'ant-lion',
 'wraith',
 'cartoon mummy',
@@ -58,24 +65,15 @@ monsterDesc2 = [
 'half-puma-man',
 'zombie gnome',
 'harpy',
-'Fenghuang',
-'Chamrosh',
-'Vegetable Lamb of Tartary',
-'Gagana',
-'Yatagarasu',
-'Zhenniao',
-'Basilisk',
 'slime',
 'living ragdoll',
-'bear',
 'anthropomorphic bison',
 'anthropomorphic wolf',
 'anthropomorphic squid',
 'anthropomorphic great dane',
 'anthropomorphic lion',
 'demon']
-print(random.choice(monsterDesc2))
-
+print(random.choice(monsterName2))
 
 
 print ('It has', end=' ')
@@ -108,16 +106,18 @@ monsterEyes = [
 'three cat-like eyes',
 '6 little black eyes in a grid',
 'a square panel of many eyes that blink in unison',
+'a redundant array of independent eyes', 
 'blue eyes like limpid pools of tears',
 'little yellow reptilian eyes']
 print(random.choice(monsterEyes), end=' ')
                
 print ('and', end=' ')
 
-monsterEyes = [
+monsterMouth = [
 '5 tiny mouths',
 'a jaw that unhinges to reveal another, even scarier mouth',
 'big pouty lips',
+'a redundant array of independent mouths',   
 'a Glasgow smile',
 'a big gross mouth',
 'a rather unscary mouth with a few cavities',
@@ -144,7 +144,7 @@ monsterEyes = [
 'a wide sharp beak',
 'a big ole\' chomper',
 'a fairly normal mouth but rancid breath']
-print(random.choice(monsterEyes))
+print(random.choice(monsterMouth))
 
 # more or just print?
 monsterDescPref = [
@@ -153,7 +153,7 @@ monsterDescPref = [
 print(random.choice(monsterDescPref), end=' ')
 
 # limbs or fur
-monsterDesc3 = [
+monsterDesc = [
 'a great many tentacles',
 'a body like a linebacker (sweaty and overworked)',
 'a thick wintery pelt',
@@ -166,6 +166,10 @@ monsterDesc3 = [
 'centipedes for feet',
 'centipedes for arms',
 'huge swollen knees',
+'giant claws',
+'muddy knee-high boots.',
+'knife-like claws',
+'huge weird feet',  
 'glowing florescent bones',
 'a long tail like a whip',
 'glowing purple cheeks',
@@ -179,18 +183,17 @@ monsterDesc3 = [
 'an lure on its head that looks like a pack of smokes',
 'an lure on its head that looks like a 2TB SSD',
 'an lure on its head that looks like a chocolate muffin',
+'ill-fitting pants.',  
 'long red fur']                
-print(random.choice(monsterDesc3), end=' ')
+print(random.choice(monsterDesc), end=' ')
 
 print ('and', end=' ')
                 
-# additional appearance or quality/weapon
-monsterDesc4 = [
+monsterWeapon = [
 'poor depth perception',
 'fleas',
 'a tragic backstory',
 'a nasty temper',
-'ill-fitting pants.',
 'a gun??',
 'a big stick',
 'a bad attitide.',
@@ -208,10 +211,6 @@ monsterDesc4 = [
 'stans JKR.',
 'ticks.',
 'rabies.',
-'giant claws',
-'muddy knee-high boots.',
-'knife-like claws',
-'huge weird feet',
 'a forlorn demeanor', 
 'an SUV',
 'a boat oar',
@@ -243,7 +242,7 @@ monsterDesc4 = [
 'expired fish sticks',
 'a busted sleep schedule',
 'an intimidating huge red rear']                
-print(random.choice(monsterDesc4), end=' ')
+print(random.choice(monsterWeapon), end=' ')
                
 
 
